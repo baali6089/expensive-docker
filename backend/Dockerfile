@@ -9,7 +9,7 @@ RUN chown expensive:expensive -R /opt/server
 #    && chown expensive:expensive -R /opt/server
 WORKDIR /opt/server
 COPY package.json .
-COPY *.js /opt/server/
+COPY *.js .
 RUN npm install
 #USER expensive
 #EXPOSE 8081
