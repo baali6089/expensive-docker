@@ -1,7 +1,7 @@
 FROM node:20
 EXPOSE 8080
 ENV DB_HOST=mysql
-RUN useradd expensive
+RUN useradd expense
 RUN mkdir /opt/server
 RUN chown expensive:expensive -R /opt/server
 #RUN addgroup -S expense && adduser -S expensive -G expense \
