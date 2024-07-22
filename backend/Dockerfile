@@ -1,7 +1,8 @@
-FROM node:20.15.0-alpine3.20
+FROM node:20
 EXPOSE 8080
 ENV DB_HOST=mysql
-RUN useradd expense
+RUN useradd expensive
+RUN mkdir /opt/server
 RUN chown expensive:expensive -R /opt/server
 #RUN addgroup -S expense && adduser -S expensive -G expense \
 #   && mkdir /opt/server \
